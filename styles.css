@@ -1,17 +1,28 @@
 :root {
-    --div-width: 125px;
-    --div-height: 125px;
+    --div-width: 0px;
+    --div-height: 0px;
+    --container-height: 0px;
+    --container-width: 0px;
+
+}
+#container{
+    border: 1px solid;
+    box-shadow: 5px 10px #888;
 }
 
-#container {
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
+div{
+    width: var(--container-width);
+    height: var(--container-height);
+    
+
+
 }
-.div-format{
+div div{
     width: var(--div-width);
     height: var(--div-height);
+    float: left;
 
-    border: 1px solid black;
-
+}
+.fill {
+    background-color: red;
 }
